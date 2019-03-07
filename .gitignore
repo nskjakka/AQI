@@ -6,8 +6,7 @@
 /out-tsc
 
 # dependencies
-/angular-node-express-api/node_modules
-/AQI/node_modules
+node_modules/
 
 # IDEs and editors
 /.idea
