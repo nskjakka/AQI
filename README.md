@@ -1,8 +1,7 @@
 # Installation
 
-Run `npm install` in folder 
-    * 'Node Server' to install the server node_modules;
-    * 'Angular app' to install the angular node_modules
+* Run `npm install` in folder 'Node Server' to install the server node_modules;
+* Run `npm install` in folder 'Angular app' to install the angular node_modules
 
 # Node Server
 
