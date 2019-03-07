@@ -1,0 +1,8 @@
+.container {
+    margin: 0 25%;
+    padding: 0 15px;
+    height: 100%;
+}
+._fullWidth {
+    width: 100%;
+}

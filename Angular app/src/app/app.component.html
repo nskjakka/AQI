@@ -1,0 +1,29 @@
+<div class="container">
+  <mat-tab-group>
+    <mat-tab label="Concentration to AQI">
+      <form [formGroup]="form1">
+        <mat-form-field class="_fullWidth">
+          <mat-select formControlName="pollutant" placeholder="Select a Pollutant" required>
+            <mat-option *ngFor="let p of pollutants" [value]="p.code">
+              {{p.text}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="_fullWidth">
+          <input type="number" matInput formControlName="concentration" placeholder="Enter the Concentration" required>
+        </mat-form-field>
+        <mat-form-field class="_fullWidth">
+          <input type="text" matInput formControlName="userName" placeholder="Name" required>
+        </mat-form-field>
+        <mat-form-field class="_fullWidth">
+          <input type="email" matInput formControlName="userEmail" placeholder="Email" required>
+        </mat-form-field>        
+        <button mat-raised-button (click)="submit()" [disabled]="form1.invalid">Submit</button>
+        <button mat-raised-button (click)="form1.reset()" style="margin-left: 50px">Reset</button>
+      </form>
+    </mat-tab>
+    <mat-tab label="AQI to Concentration">
+      <h3>Coming Soon!</h3>
+    </mat-tab>
+  </mat-tab-group>
+</div>
